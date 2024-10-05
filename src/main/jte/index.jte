@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Home Page</title>
     <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <h1>
     What's up, my friend?
 </h1>
-<button hx-get="/random-number" hx-target="#random-number-container">
+<button hx-get="/random-number" hx-target="#random-number-container" hx-swap="beforeend">
     Click here for random number!
 </button>
 <div id="random-number-container">
